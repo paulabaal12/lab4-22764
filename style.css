@@ -1,20 +1,53 @@
 body {
-    background-color: rgb(228, 249, 197);
+    background-image: url('https://i.pinimg.com/236x/51/ad/ac/51adacd57e790329a1272a90d37665ab.jpg');
+
   }
   
+
   h1 {
     text-align: center;
-    color:rgb(38, 99, 7); 
+    color: rgb(0, 0, 0);
     font-size: 50px;
-  }
-   
-  img {
-    display: block;
-    margin: 0 auto;
+    font-family: "Homer Simpson UI";
+    background-color:  rgb(249, 255, 189);
   }
   
-  img {
-    width: 500px; 
-    height: auto; 
+  h3{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: serif;
+    background-color: #FFFCE1;
+  }
+  .mirrorball1 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #E7FDDD 25%, #DFFED1 25%, #D3FDC0 50%, #CDFFB7  50%, #C6FEAE 75%, #C1FFA7 75%);
+    animation: rotate 5s infinite linear;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mirrorball1::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #183a12cd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   
