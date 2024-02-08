@@ -1,35 +1,37 @@
 body {
     background-image: url('https://i.pinimg.com/236x/51/ad/ac/51adacd57e790329a1272a90d37665ab.jpg');
-
   }
   
-
   h1 {
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 50px;
     font-family: "Homer Simpson UI";
-    background-color:  rgb(249, 255, 189);
+    background-color: rgb(249, 255, 189);
   }
   
-  h3{
+  h3 {
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: serif;
     background-color: #FFFCE1;
   }
-  .mirrorball1 {
+  
+
+  .cd1 {
     position: relative;
+    display: flex;
     width: 400px;
     height: 400px;
     border-radius: 50%;
     background: linear-gradient(45deg, #E7FDDD 25%, #DFFED1 25%, #D3FDC0 50%, #CDFFB7  50%, #C6FEAE 75%, #C1FFA7 75%);
     animation: rotate 5s infinite linear;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    
+    margin: 0 20px;
   }
   
-  .mirrorball1::before {
+  .cd1::before {
     content: "";
     position: relative;
     top: 50%;
@@ -38,10 +40,59 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #183a12cd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+    background: #b2efb9
   }
   
+  .cd2 {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FDDDE7 25%, #FED1DF 25%, #FDC0D3 50%, #FFB7CD  50%, #FEAEC6 75%, #FFA7C1 75%);
+    animation: rotate 5s infinite linear;
+
+    margin: 0 20px;
+  }
+  
+  .cd2::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FDDDE7
+  }
+  
+
+  .cd3 {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7885E1 25%, #6978E0 25%, #6171E1 50%, #5668E2  50%, #4156E1 75%, #2E54ED 75%);
+    animation: rotate 5s infinite linear;
+
+    margin: 0 20px;
+  }
+  
+  .cd3::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #C5F7FF
+  }
+
+
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
@@ -51,3 +102,12 @@ body {
     }
   }
   
+  
+
+/* Animación y transition */
+.cd1:active,
+.cd2:active,
+.cd3:active {
+  transform: scale(3.5); 
+  transition: transform 3.5s ease; 
+}
