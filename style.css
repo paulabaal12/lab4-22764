@@ -22,8 +22,8 @@ body {
   .cd1 {
     position: relative;
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background: linear-gradient(45deg, #E7FDDD 25%, #DFFED1 25%, #D3FDC0 50%, #CDFFB7  50%, #C6FEAE 75%, #C1FFA7 75%);
     animation: rotate 5s infinite linear;
@@ -42,16 +42,17 @@ body {
     border-radius: 50%;
     background: #b2efb9
   }
-  
+
+
   .cd2 {
     position: relative;
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #FDDDE7 25%, #FED1DF 25%, #FDC0D3 50%, #FFB7CD  50%, #FEAEC6 75%, #FFA7C1 75%);
+    background: linear-gradient(45deg, #F6FCA7 25%, #F7FE99 25%, #F3FA88 50%, #F4FC7A 50%, #F4FD68 75%, #F1FB5A 75%);
     animation: rotate 5s infinite linear;
-
+    
     margin: 0 20px;
   }
   
@@ -64,19 +65,19 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #FDDDE7
+    background: #F7FAD0
   }
   
 
   .cd3 {
     position: relative;
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #7885E1 25%, #6978E0 25%, #6171E1 50%, #5668E2  50%, #4156E1 75%, #2E54ED 75%);
+    background: linear-gradient(45deg, #F5C2FB 25%, #F6B8FE 25%, #F3A3FE 50%, #F396FF 50%, #EF7DFE 75%, #EB61FD 75%);
     animation: rotate 5s infinite linear;
-
+    
     margin: 0 20px;
   }
   
@@ -89,7 +90,200 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    background: #F9D8FD
+  }
+
+  .cd4 {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FDC3B9 25%, #FEB9AD 25%, #FDA99A  50%, #FC9987 50%, #FD826C 75%, #FC6D54 75%);
+    animation: rotate 5s infinite linear;
+    
+    margin: 0 20px;
+  }
+  
+  .cd4::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #F9D1CA
+  }
+
+
+
+  .cd5 {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #B5EDFB 25%, #A7EDFF 25%, #95E7FC  50%, #86E3FA 50%, #6FDEFA 75%, #58DCFD 75%);
+    animation: rotate 5s infinite linear;
+    
+    margin: 0 20px;
+  }
+  
+  .cd5::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #CFF2FB
+  }
+
+  .cd6 {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #424242 25%, #303030 25%, #303030  50%, #212121 50%, #212121 75%, #000000 75%);
+    animation: rotate 5s infinite linear;
+    
+    margin: 0 20px;
+  }
+  
+  .cd6::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #424242
+  }
+  .cd7 {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FDDDE7 25%, #FED1DF 25%, #FDC0D3 50%, #FFB7CD  50%, #FEAEC6 75%, #FFA7C1 75%);
+    animation: rotate 5s infinite linear;
+
+    margin: 0 20px;
+  }
+  
+  .cd7::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FDDDE7
+  }
+
+  .cd8 {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #DCDCDC 25%, #E0E0E0 25%, #E0E0E0 50%, #E0E0E0  50%, #757575 75%, #757575 75%);
+    animation: rotate 5s infinite linear;
+
+    margin: 0 20px;
+  }
+  
+  .cd8::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #DCDCDC
+  }
+  
+
+  .cd9 {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #DAC7BC 25%, #DCBCAA 25%, #DDB39C 50%, #DFA788  50%, #BD7046 75%, #B05E31 75%);
+    animation: rotate 5s infinite linear;
+
+    margin: 0 20px;
+  }
+  
+  .cd9::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #DAC7BC
+  }
+  .cd10 {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7885E1 25%, #6978E0 25%, #6171E1 50%, #5668E2  50%, #4156E1 75%, #2E54ED 75%);
+    animation: rotate 5s infinite linear;
+
+    margin: 0 20px;
+  }
+  
+  .cd10::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background: #C5F7FF
+  }
+
+  .cd11 {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FFFFFF 25%, #FFFFFF 25%, #FFFAFA 50%, #FFFAFA  50%, #F5F5F5 75%, #F5F5F5 75%);
+    animation: rotate 5s infinite linear;
+
+    margin: 0 20px;
+  }
+  
+  .cd11::before {
+    content: "";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #F5F5F5
   }
 
 
