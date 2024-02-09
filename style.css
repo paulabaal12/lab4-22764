@@ -308,12 +308,12 @@ body {
 
 
 .microphone {
-    width: 120px; /* Aumentar el ancho del micrófono */
-    height: 400px; /* Aumentar la altura del micrófono */
-    background-color: #333; /* Gris oscuro */
-    border-radius: 30px; /* Aumentar el radio del borde */
+    width: 120px; 
+    height: 400px; 
+    background-color: #333; 
+    border-radius: 30px; 
     margin: 40px auto;
-    transform: rotate(-15deg); /* Inclinar el micrófono */
+    transform: rotate(-15deg); 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -323,27 +323,27 @@ body {
 
 .microphone::before {
     content: "";
-    width: 160px; /* Aumentar el ancho del círculo */
-    height: 160px; /* Aumentar la altura del círculo */
-    background-color: #666; /* Gris medio */
+    width: 160px; 
+    height: 160px; 
+    background-color: #666; 
     border-radius: 45%;
     align-self: center;
-    position: relative; /* Agregar esta propiedad */
+    position: relative; 
     top: -30px; 
     justify-content: space-between;
     transform: skew(0deg);
-    border: 1px solid #3b3a3a; /* Inclinar el círculo */
+    border: 1px solid #3b3a3a; 
 }
 
 
 .microphone::after {
     content: "";
-    width: 40px; /* Aumentar el ancho de la base */
-    height: 15px; /* Aumentar la altura de la base */
-    background-color: #6b6868; /* Rojo oscuro */
+    width: 40px; 
+    height: 15px; 
+    background-color: #6b6868; 
     align-self: center;
-    transform: skew(6deg); /* Inclinar la base */
-    border-radius: 2px; /* Redondear las esquinas de la base */
+    transform: skew(6deg); 
+    border-radius: 2px; 
 }
 
 
@@ -354,5 +354,5 @@ body {
 }
 
 .microphone:hover {
-    animation: pulse 0.5s infinite; /* Aplicar la animación al pasar el ratón sobre el micrófono */
+    animation: pulse 0.5s infinite; 
 }
