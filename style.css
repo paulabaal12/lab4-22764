@@ -18,7 +18,7 @@ body {
     background-color: #FFFCE1;
   }
   
-
+/*CREACIÓN DE LOS DISCOS */
   .cd1 {
     position: relative;
     display: flex;
@@ -305,7 +305,7 @@ body {
   transform: scale(0.5); 
   transition: transform 3.5s ease; 
 }
-
+/*CREACION DE MICROFONO */
 
 .microphone {
     width: 120px; 
