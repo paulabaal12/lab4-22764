@@ -354,6 +354,18 @@ body {
 }
 
 .microphone:hover {
-    animation: pulse 0.5s infinite; 
+  animation: pulse 0.5s infinite; 
 }
 
+.audio-player {
+  width: 5%;
+  text-align: center;
+  align-self: center;
+  margin-top: 1px;
+}
+
+.center-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; }
