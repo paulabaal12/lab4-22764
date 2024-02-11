@@ -1,7 +1,7 @@
 
   body {
 
-    background-color: #FFFCE1;
+    background-color: #fffdf0;
   
   }
   
@@ -406,38 +406,40 @@ animation: pulse 0.5s infinite;
 /* Notas musicales */
 
 .music-container {
-  display: block;
-  margin: auto;
-  position: relative;
-  width: 100%;
-  min-width: 100%;
-  height:100%; 
+  display: flex;
+  flex-wrap: wrap;
+  
   }
 
  
 .note {
   font-family: 'Arial', sans-serif;
   font-size: 24px;
-  animation: noteAnimation 600s linear infinite;
+  margin: 10px;
+  animation: noteAnimation 5s linear infinite;
   display: inline-block;
   white-space: nowrap;
+  position: fixed;
 }
 
 /* Animación para las notas */
 @keyframes noteAnimation {
   0% {
-    top: 0;
-    opacity: 0.5;
+    transform: translate(0, -500%);
+    opacity: 1;
   }
-  50% {
-    top: 100%;
-    opacity: 0;
+  50% {  
+    transform: translate(0, 500%); 
+    opacity: 1;
   }
   100% {
-    top: 0;
-    opacity: 0;
+    transform: translate(0, -500%);
+    opacity: 1;
   }
 }
+
+
+
 .music {
   font-family: 'Arial', sans-serif;
 }
@@ -459,12 +461,15 @@ animation: pulse 0.5s infinite;
   top: 60px;
   left: 0;
   color: #e69f79;
-  animation-delay: 2s;
+  animation-delay: 0s;
 }
 
 .note:last-child {
   font-size: 40px;
   color: #ccdb45;
+  top: 5px;
+  left: 1%;
+  animation-delay: 6s
 }
 
 
@@ -473,7 +478,7 @@ animation: pulse 0.5s infinite;
   font-size: 40px;
   top: 30px;
   left: 30%;
-  animation-delay: 4s;
+  animation-delay: 0.5s;
 
 }
 
@@ -482,7 +487,7 @@ animation: pulse 0.5s infinite;
   font-size: 40px;
   top: 90px;
   left: 60%;
-  animation-delay: 6s;
+  animation-delay: 1s;
 }
 
 .note:nth-child(4n) {
@@ -490,7 +495,7 @@ animation: pulse 0.5s infinite;
   font-size: 40px;
   top: 40px;
   left: 90%;
-  animation-delay: 8s;
+  animation-delay: 1.5s;
 }
 
 .note:nth-child(5n) {
@@ -498,7 +503,7 @@ animation: pulse 0.5s infinite;
   font-size: 40px;
   top: 50px;
   left: 70%;
-  animation-delay: 10s;
+  animation-delay: 2s;
 }
 
 .note:nth-child(6n) {
@@ -506,7 +511,7 @@ animation: pulse 0.5s infinite;
   font-size: 40px;
   top: 150px;
   left: 5%;
-  animation-delay: 11s;
+  animation-delay: 2.5s;
 }
 
 .note:nth-child(7n) {
@@ -514,5 +519,44 @@ animation: pulse 0.5s infinite;
   font-size: 40px;
   top: 980px;
   left: 13%;
-  animation-delay: 12s;
+  animation-delay: 3s;
+}
+.note:nth-child(8n) {
+  color: #6594cc;
+  font-size: 40px;
+  top: 18px;
+  left: 25%;
+  animation-delay: 3.5s;
+}
+
+.note:nth-child(9n) {
+  color: #cf1a84;
+  font-size: 40px;
+  top: 200px;
+  left: 50%;
+  animation-delay: 4s;
+}
+
+.note:nth-child(10n) {
+  color: #14cccc;
+  font-size: 40px;
+  top: 77px;
+  left: 62%;
+  animation-delay: 4.5s;
+}
+
+.note:nth-child(11n) {
+  color: #b76fdc;
+  font-size: 40px;
+  top: 87px;
+  left: 47%;
+  animation-delay: 5s;
+}
+
+.note:nth-child(12n) {
+  color: #60ff85;
+  font-size: 40px;
+  top: 9px;
+  left: 7%;
+  animation-delay: 5.5s;
 }
