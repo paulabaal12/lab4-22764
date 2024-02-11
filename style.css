@@ -1,5 +1,8 @@
-body {
-    background-image: url('https://i.pinimg.com/236x/51/ad/ac/51adacd57e790329a1272a90d37665ab.jpg');
+
+  body {
+
+    background-color: #FFFCE1;
+  
   }
   
   h1 {
@@ -308,55 +311,84 @@ body {
 /*CREACION DE MICROFONO */
 
 .microphone {
-    width: 120px; 
-    height: 400px; 
-    background-color: #333; 
-    border-radius: 30px; 
-    margin: 40px auto;
-    transform: rotate(-15deg); 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 5px solid rgba(0, 0, 0, 0.3);
-    background: (rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  width: 120px; 
+  height: 400px; 
+  background-color: #333; 
+  border-radius: 30px; 
+  margin: 40px auto;
+  transform: rotate(-15deg); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  background: (rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
 }
 
 .microphone::before {
-    content: "";
-    width: 160px; 
-    height: 160px; 
-    background-color: #666; 
-    border-radius: 45%;
-    align-self: center;
-    position: relative; 
-    top: -30px; 
-    justify-content: space-between;
-    transform: skew(0deg);
-    border: 1px solid #3b3a3a; 
+  content: "";
+  width: 160px; 
+  height: 160px; 
+  background-color: #666; 
+  border-radius: 45%;
+  align-self: center;
+  position: relative; 
+  top: -30px; 
+  justify-content: space-between;
+  transform: skew(0deg);
+  border: 1px solid #3b3a3a; 
 }
 
 
 .microphone::after {
-    content: "";
-    width: 40px; 
-    height: 15px; 
-    background-color: #6b6868; 
-    align-self: center;
-    transform: skew(6deg); 
-    border-radius: 2px; 
+  content: "";
+  width: 40px; 
+  height: 15px; 
+  background-color: #6b6868; 
+  align-self: center;
+  transform: skew(6deg); 
+  border-radius: 2px; 
 }
+
+
+.microphone-button {
+  content: "";
+  width: 30px;
+  height: 80px;
+  align-self: center;
+  position: relative;
+  background-color: #858585;
+  border-radius: 45%;
+  margin: 50px;
+  top: -60px;}
+
+
+  .microphone-linea {
+    content: "";
+    width: 185px;
+    height: 15px;
+    align-self: center;
+    position: relative;
+    background-color: #a8a8a8;
+    border-radius: 20%;
+    margin: 0px;
+    top: -125px;}
+
+
+
 
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 
 .microphone:hover {
-  animation: pulse 0.5s infinite; 
+animation: pulse 0.5s infinite; 
 }
 
+
+/*Musica */
 .audio-player {
   width: 5%;
   text-align: center;
@@ -369,3 +401,90 @@ body {
   justify-content: center;
   align-items: center;
   height: 10vh; }
+
+
+
+
+/* Notas musicales */
+
+.note {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  animation: noteAnimation 5s linear infinite;
+  display: inline-block;
+}
+
+/* Animación para las notas */
+@keyframes noteAnimation {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(50%, 50%) scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(100%, 100%) scale(2);
+    opacity: 0;
+  }
+}
+
+.music {
+  font-family: 'Arial', sans-serif;
+}
+
+.note + .note {
+  margin-left: 40px;
+}
+
+.note:hover ~ .note {
+  color: #bc1379;
+}
+
+.music > .note {
+  font-weight: bold;
+}
+
+.note:first-child {
+  font-size: 40px;
+}
+
+.note:last-child {
+  font-size: 40px;
+}
+
+.note:nth-child(1n) {
+  color: #e69f79;
+  font-size: 40px;
+}
+
+.note:nth-child(2n) {
+  color: #cf6025;
+  font-size: 40px;
+}
+
+.note:nth-child(3n) {
+  color: #5f90ec;
+  font-size: 40px;
+}
+
+.note:nth-child(4n) {
+  color: #b444d6;
+  font-size: 40px;
+}
+
+.note:nth-child(5n) {
+  color: #b444d6;
+  font-size: 40px;
+}
+
+.note:nth-child(6n) {
+  color: #2dec40;
+  font-size: 40px;
+}
+
+.note:nth-child(7n) {
+  color: #ea7389;
+  font-size: 40px;
+}
