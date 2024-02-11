@@ -403,33 +403,41 @@ animation: pulse 0.5s infinite;
   height: 10vh; }
 
 
-
-
 /* Notas musicales */
 
+.music-container {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  height:100%; 
+  }
+
+ 
 .note {
   font-family: 'Arial', sans-serif;
   font-size: 24px;
-  animation: noteAnimation 5s linear infinite;
+  animation: noteAnimation 600s linear infinite;
   display: inline-block;
+  white-space: nowrap;
 }
 
 /* Animación para las notas */
 @keyframes noteAnimation {
   0% {
-    transform: translate(0, 0) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translate(50%, 50%) scale(1.5);
+    top: 0;
     opacity: 0.5;
   }
+  50% {
+    top: 100%;
+    opacity: 0;
+  }
   100% {
-    transform: translate(100%, 100%) scale(2);
+    top: 0;
     opacity: 0;
   }
 }
-
 .music {
   font-family: 'Arial', sans-serif;
 }
@@ -448,43 +456,63 @@ animation: pulse 0.5s infinite;
 
 .note:first-child {
   font-size: 40px;
+  top: 60px;
+  left: 0;
+  color: #e69f79;
+  animation-delay: 2s;
 }
 
 .note:last-child {
   font-size: 40px;
+  color: #ccdb45;
 }
 
-.note:nth-child(1n) {
-  color: #e69f79;
-  font-size: 40px;
-}
 
 .note:nth-child(2n) {
   color: #cf6025;
   font-size: 40px;
+  top: 30px;
+  left: 30%;
+  animation-delay: 4s;
+
 }
 
 .note:nth-child(3n) {
   color: #5f90ec;
   font-size: 40px;
+  top: 90px;
+  left: 60%;
+  animation-delay: 6s;
 }
 
 .note:nth-child(4n) {
   color: #b444d6;
   font-size: 40px;
+  top: 40px;
+  left: 90%;
+  animation-delay: 8s;
 }
 
 .note:nth-child(5n) {
   color: #b444d6;
   font-size: 40px;
+  top: 50px;
+  left: 70%;
+  animation-delay: 10s;
 }
 
 .note:nth-child(6n) {
   color: #2dec40;
   font-size: 40px;
+  top: 150px;
+  left: 5%;
+  animation-delay: 11s;
 }
 
 .note:nth-child(7n) {
   color: #ea7389;
   font-size: 40px;
+  top: 980px;
+  left: 13%;
+  animation-delay: 12s;
 }
